@@ -102,7 +102,9 @@ function subscribe_to_brevo() {
 
         // Set the attributes
         $attributes = [
-            'FNAME' => $name, // Assign the name to the first name attribute
+            'SMS' => '',
+            'FIRSTNAME' => $name,
+            'LASTNAME' => '',
         ];
         $createContact->setAttributes($attributes);
 
